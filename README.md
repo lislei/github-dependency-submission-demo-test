@@ -10,5 +10,7 @@ After having observed duplicates magically appear and dissappear on GitHub and t
 3. When merging a branch, the "dependency snapshot" related to a commit is mutating the Dependency Graph. 
  - This despite the message returned by the Dependency Graph Dependency Submission API REST endpoint:
    > "The snapshot was accepted, but it is not for the default branch. It will not update dependency results for the repository."
- - See #1 - at this point in time the Dependency Graph was of size 7.
+ - See lislei/github-dependency-submission-demo-test#2 - at this point in time the Dependency Graph was of size 7.
+4. Any subsequent PRs or triggered Actions on feature branches will introduce duplicates, i.e. lislei/github-dependency-submission-demo-test#3
+
 
