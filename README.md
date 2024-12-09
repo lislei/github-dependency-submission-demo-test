@@ -7,7 +7,8 @@ After having observed duplicates magically appear and dissappear on GitHub and t
 
 1. Fork the [official repo](https://github.com/gradle/github-dependency-submission-demo/fork) and enable Dependency Graph on the fork.
 2. [Enable Actions to be ran on the fork](https://github.com/lislei/github-dependency-submission-demo-test/actions).
-3. When merging a branch, the "dependency snapshot" related to a commit is mutating the Dependency Graph. 
+3. Toggling "Automatically delete head branches Loading" [in repo settings](https://github.com/lislei/github-dependency-submission-demo-test/settings).
+4. When merging a branch, the "dependency snapshot" related to a commit is mutating the Dependency Graph. 
  - This despite the message returned by the Dependency Graph Dependency Submission API REST endpoint:
    > "The snapshot was accepted, but it is not for the default branch. It will not update dependency results for the repository."
  - See #1 - at this point in time the Dependency Graph was of size 7.
